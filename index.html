@@ -14,13 +14,24 @@
     <div class="container" id="app">
         
         <!-- HEADER -->
-        <header>
-            <h1 class="masthead">Ashbourne & Ross Co.</h1>
-            <p class="subtitle">Private Advisory &amp; Cultural Architecture — London</p>
+        <header class="site-header">
+            <div>
+                <h1 class="masthead">Ashbourne & Ross Co.</h1>
+                <p class="subtitle">Private Advisory &amp; Cultural Architecture — London</p>
+            </div>
+            <nav class="header-nav">
+                <a href="mailto:advisory@ashbourneross.com">Inquiry</a>
+            </nav>
         </header>
+
+        <!-- SOVEREIGN OPENING THESIS (LOCKED) -->
+        <section class="sovereign-thesis">
+            <p>An independent private practice holding a major corpus of museum-grade works. Built on uncompromised discipline, absolute discretion, and the conviction that substantial transformation arrives without warning for those prepared to receive it.</p>
+        </section>
 
         <!-- HOME VIEW: ARTICLE DIRECTORY -->
         <div class="home-view">
+            <div class="directory-label">The Monograph Briefs</div>
             <ul class="article-list">
                 <li>
                     <a href="#article-1" onclick="showArticle('article-1')">
@@ -113,7 +124,7 @@
 
     </div>
 
-    <!-- LIGHTWEIGHT CLIENT-SIDE ROUTER SCRIPT FOR CLEAN MONOGRAPH FEEL -->
+    <!-- LIGHTWEIGHT CLIENT-SIDE ROUTER SCRIPT -->
     <script>
         function showArticle(id) {
             document.body.classList.add('active-view');
@@ -139,7 +150,6 @@
             }
         });
 
-        // Initial check on load
         window.addEventListener('load', () => {
             const hash = location.hash.substring(1);
             if (hash && document.getElementById(hash)) {
