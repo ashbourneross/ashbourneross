@@ -73,7 +73,7 @@ p.subtitle {
     opacity: 0.6;
 }
 
-/* SOVEREIGN OPENING THESIS */
+/* SOVEREIGN OPENING THESIS (HARMONIZED) */
 .sovereign-thesis {
     margin-bottom: 60px;
     padding-bottom: 40px;
@@ -81,12 +81,12 @@ p.subtitle {
 }
 
 .sovereign-thesis p {
-    font-size: 24px;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 1.65;
     font-weight: 400;
     margin: 0;
     color: var(--text-color);
-    letter-spacing: -0.01em;
+    letter-spacing: -0.005em;
 }
 
 /* ATMOSPHERIC CORPUS FRAME */
