@@ -23,8 +23,12 @@ body {
     padding: 80px 24px;
 }
 
-header {
-    margin-bottom: 80px;
+/* HEADER ARCHITECTURE */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 30px;
 }
@@ -35,17 +39,57 @@ h1.masthead {
     letter-spacing: 0.25em;
     text-transform: uppercase;
     font-weight: 500;
-    margin: 0 0 10px 0;
+    margin: 0 0 8px 0;
     color: var(--text-color);
 }
 
 p.subtitle {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     color: var(--muted-color);
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin: 0;
+}
+
+.header-nav a {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.header-nav a:hover {
+    color: var(--text-color);
+}
+
+/* SOVEREIGN OPENING THESIS */
+.sovereign-thesis {
+    margin-bottom: 70px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.sovereign-thesis p {
+    font-size: 22px;
+    line-height: 1.6;
+    font-weight: 400;
+    margin: 0;
+    color: var(--text-color);
+    letter-spacing: -0.01em;
+}
+
+/* DIRECTORY LABEL */
+.directory-label {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted-color);
+    margin-bottom: 30px;
 }
 
 .article-list {
@@ -87,6 +131,7 @@ p.subtitle {
     margin: 0;
 }
 
+/* FOOTER */
 footer {
     margin-top: 100px;
     padding-top: 30px;
@@ -108,12 +153,16 @@ footer a:hover {
     color: var(--text-color);
 }
 
-/* Reader View styling for articles */
+/* READER VIEW STYLING */
 .article-body {
     display: none;
 }
 
 .active-view .home-view {
+    display: none;
+}
+
+.active-view .sovereign-thesis {
     display: none;
 }
 
@@ -123,8 +172,8 @@ footer a:hover {
 
 .back-link {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    font-size: 12px;
-    letter-spacing: 0.1em;
+    font-size: 11px;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--muted-color);
     text-decoration: none;
