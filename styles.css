@@ -148,6 +148,18 @@ p.subtitle {
     margin-bottom: 0;
 }
 
+/* ADVISORY STATUS STAMP */
+.advisory-status-box {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px dashed var(--border-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--muted-color);
+    text-transform: uppercase;
+}
+
 /* DIRECTORY LABEL */
 .directory-label {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
