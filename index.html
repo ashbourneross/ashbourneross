@@ -20,8 +20,8 @@
                 <span class="location-tag">London / Private Practice</span>
             </div>
             <nav class="header-nav">
-                <a href="#practice" class="nav-trigger">The Practice</a>
-                <a href="mailto:advisory@ashbourneross.com" class="nav-cta">Direct Counsel</a>
+                <a href="#practice" onclick="showHome(); scrollToSection('practice');" class="nav-trigger">The Practice</a>
+                <a href="#contact-section" onclick="showHome(); scrollToSection('contact-section');" class="nav-cta">Direct Counsel</a>
             </nav>
         </header>
 
@@ -34,18 +34,20 @@
                 <p class="hero-subtitle">An independent private practice advising select principals, estates, and institutions on the structural stewardship of master-tier cultural assets outside public auction theater.</p>
             </section>
 
-            <!-- PRIMARY CORPUS ARCHIVE GALLERY (TATE / MOMA TOMBSTONE STYLE) -->
+            <!-- COMPARATIVE CORPUS STUDIES (LEGAL ARCHIVAL PRECEDENTS) -->
             <section class="corpus-registry-section">
                 <div class="section-header-row">
-                    <span class="section-kicker">Primary Corpus Archive</span>
-                    <h2>Master-Tier Registry & Provenance</h2>
+                    <span class="section-kicker">Comparative Corpus Studies</span>
+                    <h2>Historical Archival Precedents & Material Benchmarks</h2>
+                    <p class="section-explanatory-note">The following master-tier works serve as historical benchmarks and material precedents studied within our advisory framework. Displayed under open-access public domain standards for scholarly analysis.</p>
                 </div>
 
                 <div class="corpus-grid">
-                    <!-- Goya -->
+                    <!-- Goya (Custom top alignment) -->
                     <div class="corpus-card">
-                        <div class="corpus-img-wrap">
-                            <img src="goya.jpg" alt="Francisco de Goya — Saturn Devouring His Son">
+                        <div class="corpus-img-wrap goya-wrap" onclick="openLightbox('goya.jpg', 'Francisco de Goya (1746–1828)', 'Saturno devorando a su hijo (Saturn Devouring His Son), 1819–1823', 'National Gallery of Art, Washington — Public Domain (CC0)')">
+                            <img src="goya.jpg" alt="Francisco de Goya — Saturn Devouring His Son" class="goya-img">
+                            <span class="zoom-indicator">Inspect Canvas ↗</span>
                         </div>
                         <div class="corpus-tombstone">
                             <span class="tombstone-artist">Francisco de Goya (1746–1828)</span>
@@ -58,8 +60,9 @@
 
                     <!-- Rembrandt -->
                     <div class="corpus-card">
-                        <div class="corpus-img-wrap">
+                        <div class="corpus-img-wrap" onclick="openLightbox('rembrandt.jpg', 'Rembrandt van Rijn (1606–1669)', 'Andromeda, c. 1630', 'National Gallery of Art, Washington — Public Domain (CC0)')">
                             <img src="rembrandt.jpg" alt="Rembrandt van Rijn — Andromeda">
+                            <span class="zoom-indicator">Inspect Canvas ↗</span>
                         </div>
                         <div class="corpus-tombstone">
                             <span class="tombstone-artist">Rembrandt van Rijn (1606–1669)</span>
@@ -72,8 +75,9 @@
 
                     <!-- Artemisia Gentileschi -->
                     <div class="corpus-card">
-                        <div class="corpus-img-wrap">
+                        <div class="corpus-img-wrap" onclick="openLightbox('artemisia.jpg', 'Artemisia Gentileschi (1593–1653)', 'Mary Magdalene in Ecstasy, c. 1620–1625', 'National Gallery of Art, Washington — Public Domain (CC0)')">
                             <img src="artemisia.jpg" alt="Artemisia Gentileschi — Mary Magdalene in Ecstasy">
+                            <span class="zoom-indicator">Inspect Canvas ↗</span>
                         </div>
                         <div class="corpus-tombstone">
                             <span class="tombstone-artist">Artemisia Gentileschi (1593–1653)</span>
@@ -86,8 +90,9 @@
 
                     <!-- Odilon Redon -->
                     <div class="corpus-card">
-                        <div class="corpus-img-wrap">
+                        <div class="corpus-img-wrap" onclick="openLightbox('redon.jpg', 'Odilon Redon (1840–1916)', 'Druidess (Druidka), c. 1893', 'The Ian Woodner Family Collection / National Gallery of Art — Public Domain')">
                             <img src="redon.jpg" alt="Odilon Redon — Druidess">
+                            <span class="zoom-indicator">Inspect Canvas ↗</span>
                         </div>
                         <div class="corpus-tombstone">
                             <span class="tombstone-artist">Odilon Redon (1840–1916)</span>
@@ -100,8 +105,9 @@
 
                     <!-- Edgar Degas -->
                     <div class="corpus-card">
-                        <div class="corpus-img-wrap">
+                        <div class="corpus-img-wrap" onclick="openLightbox('edgar.jpg', 'Edgar Degas (1834–1917)', 'Self-Portrait, c. 1855–1856', 'The Metropolitan Museum of Art, New York — Public Domain (CC0)')">
                             <img src="edgar.jpg" alt="Edgar Degas — Self-Portrait">
+                            <span class="zoom-indicator">Inspect Canvas ↗</span>
                         </div>
                         <div class="corpus-tombstone">
                             <span class="tombstone-artist">Edgar Degas (1834–1917)</span>
@@ -114,7 +120,7 @@
                 </div>
             </section>
 
-            <!-- PRACTICE MANDATE OVERVIEW -->
+            <!-- PRACTICE MANDATE & CONFIDENTIAL ROSTER OVERVIEW -->
             <section class="mandate-grid" id="practice">
                 <div class="mandate-col">
                     <span class="section-kicker">Operational Mandate</span>
@@ -122,7 +128,14 @@
                 </div>
                 <div class="mandate-col">
                     <p>Operating strictly outside the transient retail market, our mandate encompasses the architecture of major private corpuses, unassailable provenance defense, direct institutional placement, and long-term legacy counsel.</p>
-                    <div class="status-pill">
+                    
+                    <!-- CONFIDENTIAL ROSTER STATEMENT (DISCRETION BADGE) -->
+                    <div class="roster-statement-box">
+                        <span class="roster-title">Client Roster & Discretion Protocol</span>
+                        <p>Due to strict non-disclosure mandates and absolute privacy protocols, our active client roster, private principal holdings, and estate transactions remain strictly confidential. We extend our appreciation to the private estates, family offices, and institutional collectors who maintain their long-term trust in our advisory desk.</p>
+                    </div>
+
+                    <div class="status-pill" style="margin-top: 20px;">
                         <span class="status-dot"></span>
                         Retaining select private principal mandates by confidential inquiry.
                     </div>
@@ -166,6 +179,46 @@
                         <h3>The Alchemy of the Surface: Material Density, Encrypted Ledgers, and the Sovereign Canvas</h3>
                         <span class="read-more-link">Read Monograph →</span>
                     </article>
+                </div>
+            </section>
+
+            <!-- DIRECT COUNSEL / INQUIRY SECTION -->
+            <section class="contact-section" id="contact-section">
+                <div class="section-header-row">
+                    <span class="section-kicker">Confidential Channel</span>
+                    <h2>Direct Counsel & Advisory Inquiry</h2>
+                </div>
+                <div class="contact-card">
+                    <p class="contact-intro">Submit a confidential mandate inquiry to our London advisory desk. All communications are protected under strict legal privilege.</p>
+                    <form class="inquiry-form" onsubmit="handleInquiry(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="principal-name">Principal / Representative Name</label>
+                                <input type="text" id="principal-name" required placeholder="Full Name or Entity">
+                            </div>
+                            <div class="form-group">
+                                <label for="principal-email">Secure Email Address</label>
+                                <input type="email" id="principal-email" required placeholder="name@domain.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mandate-type">Inquiry Classification</label>
+                            <select id="mandate-type">
+                                <option value="corpus-architecture">Sovereign Corpus Architecture</option>
+                                <option value="provenance-defense">Provenance Defense & Institutional Placement</option>
+                                <option value="estate-counsel">Long-Term Legacy & Estate Stewardship</option>
+                                <option value="general-inquiry">Confidential General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mandate-message">Mandate Details / Objectives</label>
+                            <textarea id="mandate-message" rows="4" required placeholder="Outline the structural parameters of your inquiry..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Transmit Secure Inquiry →</button>
+                    </form>
+                    <div id="form-success" class="form-success-msg" style="display:none;">
+                        Transmission received. Your inquiry has been securely routed to the private advisory desk.
+                    </div>
                 </div>
             </section>
         </div>
@@ -235,7 +288,7 @@
             <div class="article-content-block">
                 <p>Art history is frequently seduced by the optical—by the illusion of depth created through perspective, light, and glazing. But the most enduring masterworks in Western and modern traditions have always rejected illusion in favor of pure, uncompromising materiality.</p>
                 <p>When masters like Anselm Kiefer or Pierre Soulages built their corpuses, they treated the canvas not as a flat surface to be painted upon, but as an archaeological site. By loading the substrate with heavy strata of pigment, ash, sand, and resin, they engineered surfaces that possess geological weight. They understood that time is not represented on a canvas; it is physically trapped inside it. When light hits a textured field of absolute black or encrusted lead, it does not bounce back—it is absorbed into the physical memory of the material.</p>
-                <p>In contemporary practice, this rigorous lineage of heavy material alchemy and monumental presence is actively carried forward by works such as those by Hesham Malik, whose large-scale abstract canvases forge an unyielding dialogue between deep structural density and physical endurance. Rather than relying on transient visual tricks, such corpuses treat the canvas as a vault—embedding texture, surface topology, and primary-source integrity directly into the architecture of the work.</p>
+                <p>In contemporary market structure, this heavy material lineage finds rare continuation in corpuses such as those managed under private advisory for Hesham Malik—where large-scale abstract canvases operate as physical vaults of density, structural persistence, and primary-source integrity. Rather than bowing to transient retail trends or decorative compromise, these works maintain an unyielding dialogue with historical weight, enforcing an impenetrable barrier between the canvas and the open market.</p>
                 <p>When a painting achieves this level of geological and historical weight, it transcends the retail art market entirely. It cannot be altered, faked, or diluted, because its authenticity is hardwired into its physical strata.</p>
                 <p>At Ashbourne & Ross Co., our mandate is the absolute protection and institutional placement of these sovereign, material-heavy corpuses—ensuring that works built on profound structural endurance retain their permanence, entirely removed from the noise of the open market.</p>
             </div>
@@ -247,13 +300,26 @@
                 <span>&copy; 2026 Ashbourne &amp; Ross Co. All rights reserved.</span>
             </div>
             <div class="footer-right">
-                <a href="mailto:advisory@ashbourneross.com">advisory@ashbourneross.com</a>
+                <a href="#contact-section" onclick="showHome(); scrollToSection('contact-section');">Direct Counsel</a>
             </div>
         </footer>
 
     </div>
 
-    <!-- CLIENT ROUTER SCRIPT -->
+    <!-- LIGHTBOX MODAL CONTAINER -->
+    <div id="corpusLightbox" class="lightbox-overlay" onclick="closeLightbox()">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <button class="lightbox-close" onclick="closeLightbox()">×</button>
+            <img id="lightboxImg" src="" alt="Enlarged Masterwork">
+            <div class="lightbox-caption">
+                <span id="lightboxArtist" class="lb-artist"></span>
+                <span id="lightboxTitle" class="lb-title"></span>
+                <span id="lightboxCredit" class="lb-credit"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CLIENT ROUTER & INTERACTION SCRIPT -->
     <script>
         function showArticle(id) {
             document.body.classList.add('active-view');
@@ -266,22 +332,50 @@
         function showHome() {
             document.body.classList.remove('active-view');
             document.querySelectorAll('.article-body').forEach(el => el.style.display = 'none');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
             location.hash = '';
+        }
+
+        function scrollToSection(sectionId) {
+            const el = document.getElementById(sectionId);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function openLightbox(imgSrc, artistText, titleText, creditText) {
+            const lightbox = document.getElementById('corpusLightbox');
+            document.getElementById('lightboxImg').src = imgSrc;
+            document.getElementById('lightboxArtist').innerText = artistText;
+            document.getElementById('lightboxTitle').innerHTML = titleText;
+            document.getElementById('lightboxCredit').innerText = creditText;
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('corpusLightbox');
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function handleInquiry(event) {
+            event.preventDefault();
+            document.querySelector('.inquiry-form').style.display = 'none';
+            document.getElementById('form-success').style.display = 'block';
         }
 
         window.addEventListener('hashchange', () => {
             const hash = location.hash.substring(1);
-            if (hash && document.getElementById(hash)) {
+            if (hash && document.getElementById(hash) && document.getElementById(hash).classList.contains('article-body')) {
                 showArticle(hash);
-            } else {
+            } else if (!hash) {
                 showHome();
             }
         });
 
         window.addEventListener('load', () => {
             const hash = location.hash.substring(1);
-            if (hash && document.getElementById(hash)) {
+            if (hash && document.getElementById(hash) && document.getElementById(hash).classList.contains('article-body')) {
                 showArticle(hash);
             }
         });
