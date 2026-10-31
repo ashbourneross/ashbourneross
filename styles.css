@@ -105,7 +105,7 @@ body {
 
 /* HERO SECTION */
 .hero-section {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     max-width: 850px;
 }
 
@@ -132,56 +132,95 @@ body {
     max-width: 700px;
 }
 
-/* HERO CORPUS BANNER */
-.hero-corpus-banner {
-    margin-bottom: 70px;
-    border: 1px solid var(--border-subtle);
+/* PRIMARY CORPUS ARCHIVE REGISTRY (TATE / MOMA STYLE) */
+.corpus-registry-section {
+    margin-bottom: 80px;
+}
+
+.corpus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.corpus-card {
     background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
     overflow: hidden;
-}
-
-.banner-image-wrap {
-    position: relative;
-    width: 100%;
-    max-height: 540px;
-    overflow: hidden;
-}
-
-.banner-image-wrap img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    filter: contrast(1.1) brightness(0.9);
-    transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.banner-image-wrap:hover img {
-    transform: scale(1.02);
-}
-
-.banner-overlay-content {
-    padding: 24px 30px;
-    background: linear-gradient(to top, rgba(14,14,14,0.95), rgba(14,14,14,0.8));
-    border-top: 1px solid var(--border-subtle);
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    transition: border-color 0.3s ease;
 }
 
-.corpus-badge {
+.corpus-card:hover {
+    border-color: var(--accent-gold);
+}
+
+.corpus-img-wrap {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+}
+
+.corpus-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(1.1) brightness(0.9);
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.corpus-card:hover .corpus-img-wrap img {
+    transform: scale(1.03);
+}
+
+.corpus-tombstone {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-top: 1px solid var(--border-subtle);
+    background: var(--bg-card);
+}
+
+.tombstone-artist {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+}
+
+.tombstone-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-primary);
+    line-height: 1.35;
+}
+
+.tombstone-date {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.tombstone-medium {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 2px;
+}
+
+.tombstone-credit {
     font-size: 10px;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--accent-gold);
-    font-weight: 600;
-}
-
-.banner-overlay-content h2 {
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: -0.01em;
-    color: var(--text-primary);
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border-subtle);
 }
 
 /* MANDATE GRID */
@@ -245,7 +284,7 @@ body {
 }
 
 .section-header-row {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .section-header-row h2 {
@@ -406,6 +445,7 @@ footer a:hover {
         grid-template-columns: 1fr;
         gap: 30px;
     }
+    .corpus-grid,
     .briefs-grid {
         grid-template-columns: 1fr;
     }
