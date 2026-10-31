@@ -7,175 +7,199 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container" id="app">
+    <div class="site-wrapper" id="app">
         
-        <!-- HEADER -->
+        <!-- GLOBAL HEADER -->
         <header class="site-header">
-            <div>
-                <h1 class="masthead">Ashbourne & Ross Co.</h1>
-                <p class="subtitle">Private Advisory &amp; Cultural Architecture — London</p>
+            <div class="brand-cluster">
+                <a href="#" onclick="showHome()" class="brand-link">Ashbourne & Ross Co.</a>
+                <span class="location-tag">London / Private Practice</span>
             </div>
             <nav class="header-nav">
-                <a href="mailto:advisory@ashbourneross.com">Direct Counsel</a>
+                <a href="#practice" class="nav-trigger">The Practice</a>
+                <a href="mailto:advisory@ashbourneross.com" class="nav-cta">Direct Counsel</a>
             </nav>
         </header>
 
-        <!-- SOVEREIGN OPENING THESIS (LOCKED) -->
-        <section class="sovereign-thesis">
-            <p>An independent private practice holding a major corpus of museum-grade works. Built on uncompromised discipline, absolute discretion, and the conviction that substantial transformation arrives without warning for those prepared to receive it.</p>
-        </section>
-
-        <!-- ATMOSPHERIC VISUAL FRAME: CARAVAGGIO MASTERWORK (CC0) -->
-        <div class="visual-corpus-frame">
-            <div class="corpus-image-container">
-                <img src="caravaggio.jpg" alt="Caravaggio — Judith Beheading Holofernes (1599)">
-            </div>
-            <div class="corpus-caption">
-                <span>Michelangelo Merisi da Caravaggio — <em>Judith Beheading Holofernes</em>, c. 1599</span>
-                <span>Public Domain (CC0) / Institutional Archive</span>
-            </div>
-        </div>
-
-        <!-- THE PRACTICE / ABOUT SECTION -->
-        <section class="practice-section">
-            <div class="directory-label">The Practice // Operational Mandate</div>
-            <p>Ashbourne & Ross Co. operates as an independent private advisory and cultural architecture practice based in London. We advise select private principals, estates, and institutions on the structural stewardship of master-tier cultural assets.</p>
-            <p>Operating strictly outside the transient retail market, our mandate encompasses the architecture of major private corpuses, unassailable provenance defense, direct institutional placement outside public auction theater, and long-term legacy counsel. Every engagement is defined by absolute discretion, rigorous structural integrity, and zero-collision asset preservation.</p>
-            
-            <!-- ELITE ADVISORY STATUS STAMP -->
-            <div class="advisory-status-box">
-                <span>Status: Retaining select private principal and estate mandates by direct introduction or confidential inquiry.</span>
-            </div>
-        </section>
-
-        <!-- HOME VIEW: ARTICLE DIRECTORY -->
+        <!-- HOME VIEW: HERO & ARCHITECTURAL GRID -->
         <div class="home-view">
-            <div class="directory-label">Restricted Circulation // Monograph Briefs</div>
-            <ul class="article-list">
-                <li>
-                    <a href="#article-1" onclick="showArticle('article-1')">
-                        <span class="article-number">Brief I</span>
-                        <h2 class="article-title">The Architecture of Sovereign Portfolios & Museum-Grade Provenance</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="#article-2" onclick="showArticle('article-2')">
-                        <span class="article-number">Brief II</span>
-                        <h2 class="article-title">The Mechanics of Illusion and the Economics of Direct Execution</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="#article-3" onclick="showArticle('article-3')">
-                        <span class="article-number">Brief III</span>
-                        <h2 class="article-title">The Mechanics of the Ledger: Liquidity, Provenance, and the Myth of Open-Market Valuation</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="#article-4" onclick="showArticle('article-4')">
-                        <span class="article-number">Brief IV</span>
-                        <h2 class="article-title">The Extinction of the Gatekeeper: Why Sovereign Portfolios Reject Extractive Intermediaries</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="#article-5" onclick="showArticle('article-5')">
-                        <span class="article-number">Brief V</span>
-                        <h2 class="article-title">The Alchemy of the Surface: Material Density, Encrypted Ledgers, and the Sovereign Canvas</h2>
-                    </a>
-                </li>
-            </ul>
+            
+            <!-- HERO SECTION -->
+            <section class="hero-section">
+                <h1 class="hero-title">Engineering <span class="italic-serif">Sovereign</span> Portfolios & Museum-Grade Assets.</h1>
+                <p class="hero-subtitle">An independent private practice advising select principals, estates, and institutions on the structural stewardship of master-tier cultural assets outside public auction theater.</p>
+            </section>
+
+            <!-- FEATURED VISUAL CORPUS BANNER -->
+            <section class="hero-corpus-banner">
+                <div class="banner-image-wrap">
+                    <img src="caravaggio.jpg" alt="Michelangelo Merisi da Caravaggio — Judith Beheading Holofernes">
+                    <div class="banner-overlay-content">
+                        <span class="corpus-badge">Primary Corpus Archive</span>
+                        <h2>Michelangelo Merisi da Caravaggio — <em>Judith Beheading Holofernes</em>, c. 1599</h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRACTICE MANDATE OVERVIEW -->
+            <section class="mandate-grid" id="practice">
+                <div class="mandate-col">
+                    <span class="section-kicker">Operational Mandate</span>
+                    <h3>Unassailable Provenance & Zero-Collision Preservation</h3>
+                </div>
+                <div class="mandate-col">
+                    <p>Operating strictly outside the transient retail market, our mandate encompasses the architecture of major private corpuses, unassailable provenance defense, direct institutional placement, and long-term legacy counsel.</p>
+                    <div class="status-pill">
+                        <span class="status-dot"></span>
+                        Retaining select private principal mandates by confidential inquiry.
+                    </div>
+                </div>
+            </section>
+
+            <!-- RESTRICTED CIRCULATION MONOGRAPH DIRECTORY (MODERN GRID) -->
+            <section class="monograph-section">
+                <div class="section-header-row">
+                    <span class="section-kicker">Restricted Circulation</span>
+                    <h2>Monograph Briefs</h2>
+                </div>
+
+                <div class="briefs-grid">
+                    <article class="brief-card" onclick="showArticle('article-1')">
+                        <span class="brief-num">Brief I</span>
+                        <h3>The Architecture of Sovereign Portfolios & Museum-Grade Provenance</h3>
+                        <span class="read-more-link">Read Brief →</span>
+                    </article>
+
+                    <article class="brief-card" onclick="showArticle('article-2')">
+                        <span class="brief-num">Brief II</span>
+                        <h3>The Mechanics of Illusion and the Economics of Direct Execution</h3>
+                        <span class="read-more-link">Read Brief →</span>
+                    </article>
+
+                    <article class="brief-card" onclick="showArticle('article-3')">
+                        <span class="brief-num">Brief III</span>
+                        <h3>The Mechanics of the Ledger: Liquidity, Provenance, and Valuation</h3>
+                        <span class="read-more-link">Read Brief →</span>
+                    </article>
+
+                    <article class="brief-card" onclick="showArticle('article-4')">
+                        <span class="brief-num">Brief IV</span>
+                        <h3>The Extinction of the Gatekeeper: Rejecting Extractive Intermediaries</h3>
+                        <span class="read-more-link">Read Brief →</span>
+                    </article>
+
+                    <article class="brief-card featured-card" onclick="showArticle('article-5')">
+                        <span class="brief-num">Brief V</span>
+                        <h3>The Alchemy of the Surface: Material Density, Encrypted Ledgers, and the Sovereign Canvas</h3>
+                        <span class="read-more-link">Read Monograph →</span>
+                    </article>
+                </div>
+            </section>
         </div>
 
-        <!-- ARTICLE 1 -->
+        <!-- ARTICLE READER VIEW (DYNAMIC CONTAINER) -->
         <div id="article-1" class="article-body">
-            <a href="#" class="back-link" onclick="showHome()">← Index</a>
-            <span class="article-number">Brief I</span>
+            <a href="#" class="back-link" onclick="showHome()">← Return to Index</a>
+            <span class="article-meta-num">Brief I // Monograph</span>
             <h2>The Architecture of Sovereign Portfolios & Museum-Grade Provenance</h2>
-            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted-color); margin-bottom: 25px;">Published by Ashbourne & Ross Co. — Private Advisory Desk, London</p>
-            <p>In the management of significant fine-art portfolios, market volatility is rarely born of economics; it stems from spatial failure. When major bodies of work are run through standard commercial gallery pipelines, they are treated as retail inventory—flatly hung on neutral walls to court immediate transaction. Sovereign value operates under an entirely different set of laws.</p>
-            <p>Master-tier painting has never functioned as portable decoration. Art history often reduces figures like Mark Rothko to exercises in color theory, overlooking the obsession that actually governed his scale: a lifelong fixation on classical architecture and psychological weight. During his first extended stay in Europe, rather than studying harmonious, conventional masterworks, Rothko spent months dissecting Renaissance masonry, centering heavily on Michelangelo’s Laurentian Library vestibule in Florence. He walked away convinced that a canvas must act as a room rather than a picture. His massive stacked boundaries were engineered not to be looked at, but to enclose the viewer—recreating the heavy, suffocating, yet transcendent enclosure of stone walls.</p>
-            <p>When a portfolio commands that level of spatial gravity, commercial haste dismantles its authority.</p>
-            <p>At Ashbourne & Ross Co., our mandate is the systematic insulation and institutional placement of major cultural assets. Through strict zero-collision standards, rigorous provenance protocols, and direct private counsel, we ensure that exceptional portfolios maintain their architectural permanence, entirely removed from the noise of the open market.</p>
+            <p class="article-author-line">Published by Ashbourne & Ross Co. — Private Advisory Desk, London</p>
+            <div class="article-content-block">
+                <p>In the management of significant fine-art portfolios, market volatility is rarely born of economics; it stems from spatial failure. When major bodies of work are run through standard commercial gallery pipelines, they are treated as retail inventory—flatly hung on neutral walls to court immediate transaction. Sovereign value operates under an entirely different set of laws.</p>
+                <p>Master-tier painting has never functioned as portable decoration. Art history often reduces figures like Mark Rothko to exercises in color theory, overlooking the obsession that actually governed his scale: a lifelong fixation on classical architecture and psychological weight. During his first extended stay in Europe, rather than studying harmonious, conventional masterworks, Rothko spent months dissecting Renaissance masonry, centering heavily on Michelangelo’s Laurentian Library vestibule in Florence. He walked away convinced that a canvas must act as a room rather than a picture. His massive stacked boundaries were engineered not to be looked at, but to enclose the viewer—recreating the heavy, suffocating, yet transcendent enclosure of stone walls.</p>
+                <p>When a portfolio commands that level of spatial gravity, commercial haste dismantles its authority.</p>
+                <p>At Ashbourne & Ross Co., our mandate is the systematic insulation and institutional placement of major cultural assets. Through strict zero-collision standards, rigorous provenance protocols, and direct private counsel, we ensure that exceptional portfolios maintain their architectural permanence, entirely removed from the noise of the open market.</p>
+            </div>
         </div>
 
-        <!-- ARTICLE 2 -->
         <div id="article-2" class="article-body">
-            <a href="#" class="back-link" onclick="showHome()">← Index</a>
-            <span class="article-number">Brief II</span>
+            <a href="#" class="back-link" onclick="showHome()">← Return to Index</a>
+            <span class="article-meta-num">Brief II // Monograph</span>
             <h2>The Mechanics of Illusion and the Economics of Direct Execution</h2>
-            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted-color); margin-bottom: 25px;">Published by Ashbourne & Ross Co. — Private Advisory Desk, London</p>
-            <p>Mainstream art commentary loves to reduce master-tier creation to romantic myth. When critics evaluate figures like Caravaggio, they fixate exclusively on dramatic chiaroscuro and cinematic storytelling, attributing his output to raw, unmitigated inspiration. That lazy narrative serves a commercial purpose, but it fundamentally misunderstands how high-stakes execution actually operates.</p>
-            <p>History often contrasts Caravaggio with Renaissance predecessors like Raphael or Michelangelo, who spent months paralyzed by preparatory grids, meticulous ink sketches, and bureaucratic planning. Caravaggio bypassed the machinery entirely. Forensic conservation reveals that he worked straight onto the canvas (alla prima), hauling models directly off the streets of Rome and painting from life without preparatory drawings.</p>
-            <p>The mechanism behind this speed wasn't divine intervention; it was industrial innovation. By converting his Roman studio into a darkened camera obscura—projecting real-world figures via a convex lens directly onto primed canvas, leaving faint pinpricks and spatial scratch marks as optical markers—he weaponized early projection long before the modern era. He didn't wait for permission or validation from institutional gatekeepers; he engineered a direct, unmediated link between reality and the canvas.</p>
-            <p>When evaluating significant contemporary portfolios, the market often demands endless paperwork, bureaucratic certificates of authenticity, and redundant intermediaries to manufacture artificial value. True mastery requires none of it.</p>
-            <p>At Ashbourne & Ross Co., we recognize that exceptional assets are built on uncompromising execution and structural independence. By stripping away commercial noise, we ensure that major cultural portfolios maintain their unyielding clarity and sovereign market position.</p>
+            <p class="article-author-line">Published by Ashbourne & Ross Co. — Private Advisory Desk, London</p>
+            <div class="article-content-block">
+                <p>Mainstream art commentary loves to reduce master-tier creation to romantic myth. When critics evaluate figures like Caravaggio, they fixate exclusively on dramatic chiaroscuro and cinematic storytelling, attributing his output to raw, unmitigated inspiration. That lazy narrative serves a commercial purpose, but it fundamentally misunderstands how high-stakes execution actually operates.</p>
+                <p>History often contrasts Caravaggio with Renaissance predecessors like Raphael or Michelangelo, who spent months paralyzed by preparatory grids, meticulous ink sketches, and bureaucratic planning. Caravaggio bypassed the machinery entirely. Forensic conservation reveals that he worked straight onto the canvas (alla prima), hauling models directly off the streets of Rome and painting from life without preparatory drawings.</p>
+                <p>The mechanism behind this speed wasn't divine intervention; it was industrial innovation. By converting his Roman studio into a darkened camera obscura—projecting real-world figures via a convex lens directly onto primed canvas, leaving faint pinpricks and spatial scratch marks as optical markers—he weaponized early projection long before the modern era. He didn't wait for permission or validation from institutional gatekeepers; he engineered a direct, unmediated link between reality and the canvas.</p>
+                <p>When evaluating significant contemporary portfolios, the market often demands endless paperwork, bureaucratic certificates of authenticity, and redundant intermediaries to manufacture artificial value. True mastery requires none of it.</p>
+                <p>At Ashbourne & Ross Co., we recognize that exceptional assets are built on uncompromising execution and structural independence. By stripping away commercial noise, we ensure that major cultural portfolios maintain their unyielding clarity and sovereign market position.</p>
+            </div>
         </div>
 
-        <!-- ARTICLE 3 -->
         <div id="article-3" class="article-body">
-            <a href="#" class="back-link" onclick="showHome()">← Index</a>
-            <span class="article-number">Brief III</span>
+            <a href="#" class="back-link" onclick="showHome()">← Return to Index</a>
+            <span class="article-meta-num">Brief III // Monograph</span>
             <h2>The Mechanics of the Ledger: Liquidity, Provenance, and the Myth of Open-Market Valuation</h2>
-            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted-color); margin-bottom: 25px;">Published by Ashbourne & Ross Co. — Private Advisory Desk, London</p>
-            <p>To the uninitiated, the public auction cycle is presented as the ultimate barometer of artistic value. Autumn marquee sales across European capitals—where historical master-tier canvases command tens of millions, setting regional records and dominating financial news cycles—are treated as proof of an open, transparent market.</p>
-            <p>This perception is a carefully managed illusion.</p>
-            <p>Beneath the theater of competitive bidding rooms, paddle numbers, and hammer prices lies a highly engineered system of scarcity, estate positioning, and private wealth management. When a legendary post-war composition or rare modernist canvas changes hands for record-shattering sums, the transaction is rarely the result of spontaneous market enthusiasm. It is the culmination of years of meticulous archival stewardship, legal provenance structuring, and controlled private placement.</p>
-            <p>Public auction is not where true value is created; it is merely where institutional valuation is publicly ritualized. For collectors and estates holding significant, multi-decade bodies of work, relying on public auction houses or traditional commercial galleries exposes master-tier assets to severe speculative volatility. True asset preservation requires treating fine art not as retail inventory to be auctioned to the highest bidder, but as a sovereign store of capital.</p>
-            <p>At Ashbourne & Ross Co., our mandate is the structural decoupling of major cultural portfolios from the volatile theater of the open market. By implementing rigorous provenance protocols, absolute confidentiality, and direct institutional advisory frameworks, we ensure that significant portfolios maintain their sovereign weight, entirely insulated from public market noise.</p>
+            <p class="article-author-line">Published by Ashbourne & Ross Co. — Private Advisory Desk, London</p>
+            <div class="article-content-block">
+                <p>To the uninitiated, the public auction cycle is presented as the ultimate barometer of artistic value. Autumn marquee sales across European capitals—where historical master-tier canvases command tens of millions, setting regional records and dominating financial news cycles—are treated as proof of an open, transparent market.</p>
+                <p>This perception is a carefully managed illusion.</p>
+                <p>Beneath the theater of competitive bidding rooms, paddle numbers, and hammer prices lies a highly engineered system of scarcity, estate positioning, and private wealth management. When a legendary post-war composition or rare modernist canvas changes hands for record-shattering sums, the transaction is rarely the result of spontaneous market enthusiasm. It is the culmination of years of meticulous archival stewardship, legal provenance structuring, and controlled private placement.</p>
+                <p>Public auction is not where true value is created; it is merely where institutional valuation is publicly ritualized. For collectors and estates holding significant, multi-decade bodies of work, relying on public auction houses or traditional commercial galleries exposes master-tier assets to severe speculative volatility. True asset preservation requires treating fine art not as retail inventory to be auctioned to the highest bidder, but as a sovereign store of capital.</p>
+                <p>At Ashbourne & Ross Co., our mandate is the structural decoupling of major cultural portfolios from the volatile theater of the open market. By implementing rigorous provenance protocols, absolute confidentiality, and direct institutional advisory frameworks, we ensure that significant portfolios maintain their sovereign weight, entirely insulated from public market noise.</p>
+            </div>
         </div>
 
-        <!-- ARTICLE 4 -->
         <div id="article-4" class="article-body">
-            <a href="#" class="back-link" onclick="showHome()">← Index</a>
-            <span class="article-number">Brief IV</span>
+            <a href="#" class="back-link" onclick="showHome()">← Return to Index</a>
+            <span class="article-meta-num">Brief IV // Monograph</span>
             <h2>The Extinction of the Gatekeeper: Why Sovereign Portfolios Reject Extractive Intermediaries</h2>
-            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted-color); margin-bottom: 25px;">Published by Ashbourne & Ross Co. — Private Advisory Desk, London</p>
-            <p>In the upper echelons of global wealth and cultural asset management, an unwritten tax has long been accepted as the cost of doing business: the extractive middleman.</p>
-            <p>For decades, master-tier portfolios and major creative legacies have relied on traditional agency networks, commercial galleries, and high-street PR firms to navigate the public sphere. In exchange for bloated retainers, these entities have offered little more than recycled press mechanics, short-term promotional hype, and transactional noise. Worse still, the structural rot within these traditional gatekeepers has become impossible to ignore—defined by excessive overhead demands, conflicts of interest, and a complete absence of institutional discretion.</p>
-            <p>History has repeatedly proven that true mastery cannot survive within a retail pipeline. When artists like Alberto Giacometti spent decades stripping away non-essential noise to forge figures of unyielding, raw presence, they did so entirely divorced from the commercial fads of their era. They understood that enduring weight is never manufactured by public relations machinery; it is forged through absolute autonomy.</p>
-            <p>True sovereign portfolios do not need intermediaries; they require architecture.</p>
-            <p>When managing multi-decade bodies of work and high-value cultural assets, the objective is not to court fleeting public attention, but to enforce absolute control. Sovereign advisory means operating with zero collisions—severing ties with commercial middlemen who treat legacy assets as speculative inventory. It requires an impenetrable firewall between the creator's portfolio and the noisy retail market.</p>
-            <p>At Ashbourne & Ross Co., our practice was built as a direct counter-model to this obsolete ecosystem. By enforcing strict confidentiality, elite-tier direct counsel, and absolute structural independence, we ensure that major cultural assets remain protected, valued, and sovereign.</p>
+            <p class="article-author-line">Published by Ashbourne & Ross Co. — Private Advisory Desk, London</p>
+            <div class="article-content-block">
+                <p>In the upper echelons of global wealth and cultural asset management, an unwritten tax has long been accepted as the cost of doing business: the extractive middleman.</p>
+                <p>For decades, master-tier portfolios and major creative legacies have relied on traditional agency networks, commercial galleries, and high-street PR firms to navigate the public sphere. In exchange for bloated retainers, these entities have offered little more than recycled press mechanics, short-term promotional hype, and transactional noise. Worse still, the structural rot within these traditional gatekeepers has become impossible to ignore—defined by excessive overhead demands, conflicts of interest, and a complete absence of institutional discretion.</p>
+                <p>History has repeatedly proven that true mastery cannot survive within a retail pipeline. When artists like Alberto Giacometti spent decades stripping away non-essential noise to forge figures of unyielding, raw presence, they did so entirely divorced from the commercial fads of their era. They understood that enduring weight is never manufactured by public relations machinery; it is forged through absolute autonomy.</p>
+                <p>True sovereign portfolios do not need intermediaries; they require architecture.</p>
+                <p>When managing multi-decade bodies of work and high-value cultural assets, the objective is not to court fleeting public attention, but to enforce absolute control. Sovereign advisory means operating with zero collisions—severing ties with commercial middlemen who treat legacy assets as speculative inventory. It requires an impenetrable firewall between the creator's portfolio and the noisy retail market.</p>
+                <p>At Ashbourne & Ross Co., our practice was built as a direct counter-model to this obsolete ecosystem. By enforcing strict confidentiality, elite-tier direct counsel, and absolute structural independence, we ensure that major cultural assets remain protected, valued, and sovereign.</p>
+            </div>
         </div>
 
-        <!-- ARTICLE 5 (REFINED & ELEVATED) -->
         <div id="article-5" class="article-body">
-            <a href="#" class="back-link" onclick="showHome()">← Index</a>
-            <span class="article-number">Brief V</span>
+            <a href="#" class="back-link" onclick="showHome()">← Return to Index</a>
+            <span class="article-meta-num">Brief V // Monograph</span>
             <h2>The Alchemy of the Surface: Material Density, Encrypted Ledgers, and the Sovereign Canvas</h2>
-            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted-color); margin-bottom: 25px;">Published by Ashbourne & Ross Co. — Private Advisory Desk, London</p>
-            <p>Art history is frequently seduced by the optical—by the illusion of depth created through perspective, light, and glazing. But the most enduring masterworks in Western and modern traditions have always rejected illusion in favor of pure, uncompromising materiality.</p>
-            <p>When masters like Anselm Kiefer or Pierre Soulages built their corpuses, they treated the canvas not as a flat surface to be painted upon, but as an archaeological site. By loading the substrate with heavy strata of pigment, ash, sand, and resin, they engineered surfaces that possess geological weight. They understood that time is not represented on a canvas; it is physically trapped inside it. When light hits a textured field of absolute black or encrusted lead, it does not bounce back—it is absorbed into the physical memory of the material.</p>
-            <p>In contemporary practice, this rigorous lineage of heavy material alchemy and monumental presence is actively carried forward by works such as those by Hesham Malik, whose large-scale abstract canvases forge an unyielding dialogue between deep structural density and physical endurance. Rather than relying on transient visual tricks, such corpuses treat the canvas as a vault—embedding texture, surface topology, and primary-source integrity directly into the architecture of the work.</p>
-            <p>When a painting achieves this level of geological and historical weight, it transcends the retail art market entirely. It cannot be altered, faked, or diluted, because its authenticity is hardwired into its physical strata.</p>
-            <p>At Ashbourne & Ross Co., our mandate is the absolute protection and institutional placement of these sovereign, material-heavy corpuses—ensuring that works built on profound structural endurance retain their permanence, entirely removed from the noise of the open market.</p>
+            <p class="article-author-line">Published by Ashbourne & Ross Co. — Private Advisory Desk, London</p>
+            <div class="article-content-block">
+                <p>Art history is frequently seduced by the optical—by the illusion of depth created through perspective, light, and glazing. But the most enduring masterworks in Western and modern traditions have always rejected illusion in favor of pure, uncompromising materiality.</p>
+                <p>When masters like Anselm Kiefer or Pierre Soulages built their corpuses, they treated the canvas not as a flat surface to be painted upon, but as an archaeological site. By loading the substrate with heavy strata of pigment, ash, sand, and resin, they engineered surfaces that possess geological weight. They understood that time is not represented on a canvas; it is physically trapped inside it. When light hits a textured field of absolute black or encrusted lead, it does not bounce back—it is absorbed into the physical memory of the material.</p>
+                <p>In contemporary practice, this rigorous lineage of heavy material alchemy and monumental presence is actively carried forward by works such as those by Hesham Malik, whose large-scale abstract canvases forge an unyielding dialogue between deep structural density and physical endurance. Rather than relying on transient visual tricks, such corpuses treat the canvas as a vault—embedding texture, surface topology, and primary-source integrity directly into the architecture of the work.</p>
+                <p>When a painting achieves this level of geological and historical weight, it transcends the retail art market entirely. It cannot be altered, faked, or diluted, because its authenticity is hardwired into its physical strata.</p>
+                <p>At Ashbourne & Ross Co., our mandate is the absolute protection and institutional placement of these sovereign, material-heavy corpuses—ensuring that works built on profound structural endurance retain their permanence, entirely removed from the noise of the open market.</p>
+            </div>
         </div>
 
-        <!-- FOOTER -->
-        <footer>
-            <span>&copy; 2026 Ashbourne &amp; Ross Co. All rights reserved.</span>
-            <span><a href="mailto:advisory@ashbourneross.com">advisory@ashbourneross.com</a></span>
-        </footer>
+        <!-- GLOBAL FOOTER -->
+        <site-footer>
+            <footer>
+                <div class="footer-left">
+                    <span>&copy; 2026 Ashbourne &amp; Ross Co. All rights reserved.</span>
+                </div>
+                <div class="footer-right">
+                    <a href="mailto:advisory@ashbourneross.com">advisory@ashbourneross.com</a>
+                </div>
+            </footer>
+        </site-footer>
 
     </div>
 
-    <!-- LIGHTWEIGHT CLIENT-SIDE ROUTER SCRIPT -->
+    <!-- CLIENT ROUTER SCRIPT -->
     <script>
         function showArticle(id) {
             document.body.classList.add('active-view');
             document.querySelectorAll('.article-body').forEach(el => el.style.display = 'none');
             document.getElementById(id).style.display = 'block';
-            window.scrollTo(0, 0);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
             location.hash = id;
         }
 
         function showHome() {
             document.body.classList.remove('active-view');
             document.querySelectorAll('.article-body').forEach(el => el.style.display = 'none');
-            window.scrollTo(0, 0);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
             location.hash = '';
         }
 
