@@ -338,7 +338,7 @@ body {
     border-radius: 50%;
 }
 
-/* MONOGRAPH SECTION & GRID */
+/* ASYMMETRICAL ARCHITECTURAL BRIEF GRID */
 .monograph-section {
     margin-bottom: 80px;
 }
@@ -352,13 +352,13 @@ body {
     font-weight: 300;
 }
 
-.briefs-grid {
+.briefs-asymmetrical-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
 
-.brief-card {
+.briefs-asymmetrical-grid .brief-card {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
     padding: 35px;
@@ -370,15 +370,24 @@ body {
     min-height: 220px;
 }
 
-.brief-card:hover {
+.briefs-asymmetrical-grid .brief-card:hover {
     border-color: var(--accent-gold);
     transform: translateY(-4px);
 }
 
-.brief-card.featured-card {
-    grid-column: span 1;
+/* Brief V spans full width as a cinematic featured monograph banner */
+.briefs-asymmetrical-grid .featured-cinematic-card {
+    grid-column: span 2;
     background: linear-gradient(135deg, #141414, #1f1b14);
-    border-color: rgba(197, 160, 89, 0.3);
+    border-color: rgba(197, 160, 89, 0.4);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 40px;
+}
+
+.featured-cinematic-card .featured-card-content {
+    max-width: 750px;
 }
 
 .brief-num {
@@ -390,12 +399,17 @@ body {
     display: block;
 }
 
-.brief-card h3 {
+.briefs-asymmetrical-grid .brief-card h3 {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.4;
     margin-bottom: 25px;
     color: var(--text-primary);
+}
+
+.featured-cinematic-card h3 {
+    font-size: 24px !important;
+    margin-bottom: 0 !important;
 }
 
 .read-more-link {
@@ -617,17 +631,7 @@ body {
     font-size: clamp(32px, 4vw, 44px);
     font-weight: 300;
     line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.article-author-line {
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    margin-bottom: 50px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--border-subtle);
+    margin-bottom: 30px;
 }
 
 .article-content-block p {
@@ -674,8 +678,14 @@ footer a:hover {
         gap: 30px;
     }
     .corpus-grid,
-    .briefs-grid {
+    .briefs-asymmetrical-grid {
         grid-template-columns: 1fr;
+    }
+    .briefs-asymmetrical-grid .featured-cinematic-card {
+        grid-column: span 1;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
     }
     .site-header {
         flex-direction: column;
