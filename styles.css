@@ -1,10 +1,10 @@
 :root {
-    --bg-primary: #0a0a0a;
-    --bg-card: #141414;
+    --bg-primary: #636458;
+    --bg-card: #53544c;
     --text-primary: #f3f3f0;
-    --text-muted: #888884;
+    --text-muted: #d5d5d0;
     --accent-gold: #c5a059;
-    --border-subtle: #262622;
+    --border-subtle: #464740;
     --max-content-width: 1200px;
 }
 
@@ -389,7 +389,7 @@ body {
 /* Brief V spans full width as a cinematic featured monograph banner */
 .briefs-asymmetrical-grid .featured-cinematic-card {
     grid-column: span 2;
-    background: linear-gradient(135deg, #141414, #1f1b14);
+    background: linear-gradient(135deg, #53544c, #484942);
     border-color: rgba(197, 160, 89, 0.4);
     flex-direction: row;
     align-items: center;
