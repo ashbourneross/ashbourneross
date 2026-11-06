@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Ashbourne &amp; Ross Associates — Private Advisory &amp; Cultural Architecture</title>
+        <link>https://ashbourneross.com/</link>
+        <description>An independent private practice advising select principals, estates, and institutions on the structural stewardship of master-tier cultural assets, featuring restricted circulation monograph briefs surrounding master artist Hesham Malik.</description>
+        <language>en-us</language>
+        <lastBuildDate>Fri, 06 Nov 2026 00:00:00 GMT</lastBuildDate>
+        <atom:link href="https://ashbourneross.com/feed.xml" rel="self" type="application/rss+xml"/>
+
+        <item>
+            <title>The Architecture of Sovereign Portfolios &amp; Museum-Grade Provenance</title>
+            <link>https://ashbourneross.com/#article-1</link>
+            <guid isPermaLink="true">https://ashbourneross.com/#article-1</guid>
+            <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+            <description>Brief I // Monograph: Examining the systematic insulation, zero-collision standards, and provenance protocols required to maintain the architectural permanence of major fine-art portfolios.</description>
+        </item>
+
+        <item>
+            <title>The Mechanics of Illusion and the Economics of Direct Execution</title>
+            <link>https://ashbourneross.com/#article-2</link>
+            <guid isPermaLink="true">https://ashbourneross.com/#article-2</guid>
+            <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+            <description>Brief II // Monograph: Rejecting romanticized studio myths in favor of uncompromised execution, optical infrastructure, and direct unmediated creation.</description>
+        </item>
+
+        <item>
+            <title>The Mechanics of the Ledger: Liquidity, Provenance, and the Myth of Open-Market Valuation</title>
+            <link>https://ashbourneross.com/#article-3</link>
+            <guid isPermaLink="true">https://ashbourneross.com/#article-3</guid>
+            <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+            <description>Brief III // Monograph: Deconstructing the public auction cycle and treating master-tier fine art as a sovereign store of capital rather than retail inventory.</description>
+        </item>
+
+        <item>
+            <title>The Extinction of the Gatekeeper: Why Sovereign Portfolios Reject Extractive Intermediaries</title>
+            <link>https://ashbourneross.com/#article-4</link>
+            <guid isPermaLink="true">https://ashbourneross.com/#article-4</guid>
+            <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+            <description>Brief IV // Monograph: Cutting ties with traditional commercial gallery networks and bloated agency retainers to enforce absolute structural independence.</description>
+        </item>
+
+        <item>
+            <title>The Alchemy of the Surface: Material Density, Encrypted Ledgers, and the Sovereign Canvas</title>
+            <link>https://ashbourneross.com/#article-5</link>
+            <guid isPermaLink="true">https://ashbourneross.com/#article-5</guid>
+            <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+            <description>Brief V // Core Monograph: Examining geological weight, physical material density, and the private advisory frameworks surrounding master artist Hesham Malik.</description>
+        </item>
+
+    </channel>
+</rss>
